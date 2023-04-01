@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
 public class MemoryFragmentShootable : MonoBehaviour, IShootable
 {
     [SerializeField] private int amountOfHitsNeeded;
     [Range(0, 100)]
-    [SerializeField] private int hitSizeIncrease;
+    [SerializeField] private int percentScaleIncrease;
     private float sizeScale;
     private SpringValue spring;
 
@@ -18,12 +19,12 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
     private void Start()
     {
         spring = new SpringValue(this.transform.localScale.x, stiffness, damping);
-        sizeScale = (hitSizeIncrease / 100) * transform.localScale.x;
+        sizeScale = (percentScaleIncrease / 100f) * transform.localScale.x;
     }
     private void Update()
     {
         spring.Update(Time.deltaTime);
-        float temp = Mathf.Abs(spring.value);
+        float temp = Mathf.Clamp(spring.value, 0, 10);
         transform.localScale = new Vector3(temp, temp, temp);
     }
 
@@ -34,6 +35,7 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
         spring.Nudge(1);
         if (amountOfHitsNeeded <= 0)
         {
+            Destroy(gameObject.GetComponent<BoxCollider>());
             spring.targetValue = 0;
             Destroy(gameObject, 2);
             //enter behavior to change level

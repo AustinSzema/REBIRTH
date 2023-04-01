@@ -141,32 +141,32 @@ PrefabInstance:
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.49
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.49
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.49
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2681932
+      value: -0.947
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 1.582
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.22632
+      value: 6.923
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477712, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
@@ -211,17 +211,22 @@ PrefabInstance:
     - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: damping
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: stiffness
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
       propertyPath: hitSizeIncrease
-      value: 32
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: percentScaleIncrease
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477717, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}

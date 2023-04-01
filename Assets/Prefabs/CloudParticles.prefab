@@ -4862,3 +4862,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfHitsNeeded: 12
+  percentScaleIncrease: 33
+  stiffness: 10
+  damping: 0.1
