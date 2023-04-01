@@ -976,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 937794079}
   - component: {fileID: 937794080}
+  - component: {fileID: 937794081}
   m_Layer: 0
   m_Name: ShootProjectile
   m_TagString: Untagged
@@ -1005,7 +1006,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937794078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: daa1ce74bf9eb474fa070bd8fdba80a6, type: 3}
   m_Name: 
@@ -1044,6 +1045,22 @@ MonoBehaviour:
   - {fileID: 3141120828048097299, guid: c1156c8cfb8119e42bdaf67248a31acf, type: 3}
   - {fileID: -5495902117074765545, guid: 409fb785879f2564dbb2b1b208f9125c, type: 3}
   TextToShoot: ' poop jam peepeepoopoopissdoodoofart'
+--- !u!114 &937794081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937794078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfac9fbca1fc754986ece8ad1cc726a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 2865873648092763241, guid: 53a189c56ae5a1041899be098d880365,
+    type: 3}
+  projectileSpeed: 50
+  shootingPoint: {fileID: 730529483}
 --- !u!1 &1028513131
 GameObject:
   m_ObjectHideFlags: 0
