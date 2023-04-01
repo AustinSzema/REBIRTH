@@ -25,12 +25,28 @@ public class PlayDialogue : MonoBehaviour
 
     void nextString()
     {
-        if(index <= dialogueSO.DialogueText.Length - 1)
+        if (index <= dialogueSO.DialogueText.Length - 1)
         {
+
             dialogueText.text = dialogueSO.DialogueText[index];
+
+
+            if (dialogueSO.DialogueText[index].Length > 0 && !char.IsLetter(dialogueSO.DialogueText[index][0]))
+            {
+                dialogueText.fontStyle = FontStyles.Normal;
+
+            }
+            else
+            {
+
+                dialogueText.fontStyle = FontStyles.Italic | FontStyles.Bold;
+
+            }
+
+
             index++;
         }
-        if(index == dialogueSO.DialogueText.Length)
+        if (index == dialogueSO.DialogueText.Length)
         {
             CancelInvoke("nextString");
 
@@ -39,3 +55,6 @@ public class PlayDialogue : MonoBehaviour
     }
 
 }
+
+
+
