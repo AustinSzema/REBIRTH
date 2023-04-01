@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Cutscene1Dialogue
   m_EditorClassIdentifier: 
   DialogueText:
-  - 'You: Ugh...what time is it?'
-  - "You:  ...Huh? Where\u2019s my alarm clock...?"
+  - "\u201CRight...I was late to work. Stupid alarm clock didn\u2019t go off!\u201D "
+  - The alarm clock was not indeed stupid. The same cannot be said of the person
+    who forgot to set it.
+  - "\u201CAnd then what...? Right, I had to get to work. But first...\u201D "

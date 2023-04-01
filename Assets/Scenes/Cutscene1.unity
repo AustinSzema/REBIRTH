@@ -958,6 +958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1639a7173d169dc478b11af5ac649d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: 4b8e16df38285034d81cca8a7eb04270, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 7253df324b8e6d24a830879992ed8965, type: 2}
   dialogueText: {fileID: 82895211}
   textDelay: 4
