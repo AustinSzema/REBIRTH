@@ -7,19 +7,13 @@ public class ProjectileBehavior : MonoBehaviour
     private bool hitAlready = false;
     void Start()
     {
-        Destroy(this, 3);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(gameObject, 10);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (hitAlready) { return; }
-        IShootable shootable =  collision.gameObject.GetComponent<IShootable>();
+        IShootable shootable = collision.gameObject.GetComponent<IShootable>();
         if (shootable != null)
         {
             shootable.Hit();

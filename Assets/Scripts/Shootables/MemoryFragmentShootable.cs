@@ -8,22 +8,12 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
     public void Hit()
     {
         amountOfHitsNeeded -= 1;
+        transform.localScale *= 1.1f;
         if (amountOfHitsNeeded <= 0)
         {
-            Destroy(this);
+            Destroy(gameObject);
             //enter behavior to change level
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
