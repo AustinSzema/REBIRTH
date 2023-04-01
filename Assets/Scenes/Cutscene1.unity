@@ -161,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You: less goooooo'
+  m_text: 'You: less goooooo alarm clock'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 34ff85a5b357ba740af61d16296fdcf1, type: 2}
   m_sharedMaterial: {fileID: 322643334834228164, guid: 34ff85a5b357ba740af61d16296fdcf1,
@@ -189,8 +189,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
