@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level1Dialogue
   m_EditorClassIdentifier: 
   DialogueText:
-  - 'You: Ugh...what time is it?'
-  - "You:  ...Huh? Where\u2019s my alarm clock...?"
+  - "\u201CUgh...what time is it?\u201D"
+  - "\u201C...Huh? Where\u2019s my alarm clock...?\u201D "
