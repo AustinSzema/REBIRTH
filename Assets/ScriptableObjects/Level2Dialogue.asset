@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level2Dialogue
   m_EditorClassIdentifier: 
   DialogueText:
-  - 'You: Ugh...what time is it?'
-  - "You:  ...Huh? Where\u2019s my alarm clock...?"
-  - "You:  ...Huh? Where\u2019s my alarm clock...?"
+  - "8 o\u2019clock already?! I\u2019m so late!"
+  - 'I should at least get some breakfast. '
+  - "I sure hope I\u2019ve got something for scrambled eggs..."
+  - He did not, in fact, have anything for scrambled eggs.
