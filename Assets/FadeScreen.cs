@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FadeScreen : MonoBehaviour
@@ -18,6 +19,8 @@ public class FadeScreen : MonoBehaviour
 
     private Color black = new Color(0f, 0f, 0f, 1f);
     private Color transparent = new Color(0f, 0f, 0f, 0f);
+    [SerializeField] private int nextScene;
+    private bool tran = true;
 
     private void Start()
     {
@@ -36,9 +39,15 @@ public class FadeScreen : MonoBehaviour
             alpha += fadeSpeed * Time.deltaTime;
             alpha = Mathf.Clamp(alpha, 0, 1);
         }
-        if (screenFade.color == black)
+        if (fadeToBlack == true && screenFade.color == black)
         {
-
+            if (SceneManager.GetSceneByBuildIndex(nextScene).IsValid())
+            {
+                if (!tran) { return; }
+                tran = false;
+                Invoke("Transition", 1);
+            }
+            
         }
 
         if (fadeToBlack == false && screenFade.color.a != 0f)
@@ -63,5 +72,10 @@ public class FadeScreen : MonoBehaviour
     public void FadeMe()
     {
         fadeToBlack = true;
+    }
+
+    void Transition()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 }
