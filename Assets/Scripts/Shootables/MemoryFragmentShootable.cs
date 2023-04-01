@@ -18,7 +18,8 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
     [Header("Spring Settings")]
     [SerializeField] private float stiffness;
     [SerializeField] private float damping;
-    
+    //[SerializeField] private float clampVelocity;
+    [SerializeField] private float bounce;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
     private void Update()
     {
         spring.Update(Time.deltaTime);
+        //spring.ClampVelocity();
         float temp = Mathf.Clamp(spring.value, 0, 10);
         transform.localScale = new Vector3(temp, temp, temp);
     }
@@ -38,7 +40,7 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
     {
         amountOfHitsNeeded -= 1;
         spring.targetValue += sizeScale;
-        spring.Nudge(1);
+        spring.Nudge(bounce);
         if (amountOfHitsNeeded <= 0)
         {
             Destroy(gameObject.GetComponent<BoxCollider>());

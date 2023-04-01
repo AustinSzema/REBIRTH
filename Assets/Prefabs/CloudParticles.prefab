@@ -4861,7 +4861,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9dbc520df0dab645a2eb7a88c27ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _transition:
+    m_PersistentCalls:
+      m_Calls: []
   amountOfHitsNeeded: 12
-  percentScaleIncrease: 33
+  percentScaleIncrease: 7
   stiffness: 10
   damping: 0.1
+  bounce: 1

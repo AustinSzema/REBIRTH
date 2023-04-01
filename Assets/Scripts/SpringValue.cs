@@ -9,6 +9,8 @@ public class SpringValue
     public float stiffness { get; set; }
     public float damping { get; set; }
     public float velocity { get; private set; }
+
+    public float clampVelocity { get; set; }
     
     public SpringValue()
     {
@@ -28,6 +30,16 @@ public class SpringValue
         this.velocity = 0;
     }
 
+    public SpringValue(float targetValue, float stiffness, float damping, float clampVelocity)
+    {
+        this.value = 0;
+        this.targetValue = targetValue;
+        this.stiffness = stiffness;
+        this.damping = damping;
+        this.velocity = 0;
+        this.clampVelocity = clampVelocity;
+    }
+
     public void Update(float deltaTime)
     {
         float force = (targetValue - value) * stiffness;
@@ -39,5 +51,10 @@ public class SpringValue
     public void Nudge (float nudgeValue)
     {
         velocity += nudgeValue;
+    }
+
+    public void ClampVelocity()
+    {
+        velocity = Mathf.Clamp(velocity, -clampVelocity, clampVelocity);
     }
 }
