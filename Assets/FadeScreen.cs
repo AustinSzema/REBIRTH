@@ -12,32 +12,56 @@ public class FadeScreen : MonoBehaviour
 
     [SerializeField] private float fadeSpeed = 0.1f;
 
-    public bool fadeToBlack = false;
+    public bool fadeToBlack { get; set; }
 
     [SerializeField] private PlayDialogue playDialogue;
 
-    private Color black = new Color(0f, 0f, 0f, 100f);
+    private Color black = new Color(0f, 0f, 0f, 1f);
+    private Color transparent = new Color(0f, 0f, 0f, 0f);
+
+    private void Start()
+    {
+        fadeToBlack = false;
+        alpha = 1f;
+        screenFade.color = new Color(0f, 0f, 0f, 1f);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(fadeToBlack == true && screenFade.color.a != 100f)
+        if (fadeToBlack == true && screenFade.color.a != 100f)
         {
+            Debug.Log(alpha);
             screenFade.color = new Color(0f, 0f, 0f, alpha);
             alpha += fadeSpeed * Time.deltaTime;
+            alpha = Mathf.Clamp(alpha, 0, 1);
         }
-        if(screenFade.color == black)
+        if (screenFade.color == black)
         {
 
         }
 
-        if(fadeToBlack == false && screenFade.color.a != 0f)
+        if (fadeToBlack == false && screenFade.color.a != 0f)
         {
+            Debug.Log(alpha);
             screenFade.color = new Color(0f, 0f, 0f, alpha);
             alpha -= fadeSpeed * Time.deltaTime;
+            alpha = Mathf.Clamp(alpha, 0, 1);
         }
 
+        //if (fadeToBlack)
+        //{
+        //    screenFade.color = Color.Lerp(screenFade.color, black, fadeSpeed * Time.deltaTime);
+        //} else
+        //{
+        //    screenFade.color = Color.Lerp(screenFade.color, transparent, fadeSpeed * Time.deltaTime);
+        //}
 
 
+    }
+
+    public void FadeMe()
+    {
+        fadeToBlack = true;
     }
 }

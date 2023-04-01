@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class MemoryFragmentShootable : MonoBehaviour, IShootable
 {
+    private static int fragmentCount = 0;
+    [SerializeField] private UnityEvent _transition;
     [SerializeField] private int amountOfHitsNeeded;
     [Range(0, 100)]
     [SerializeField] private int percentScaleIncrease;
@@ -20,6 +24,8 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
     {
         spring = new SpringValue(this.transform.localScale.x, stiffness, damping);
         sizeScale = (percentScaleIncrease / 100f) * transform.localScale.x;
+        fragmentCount += 1;
+        Debug.Log(fragmentCount);
     }
     private void Update()
     {
@@ -39,6 +45,15 @@ public class MemoryFragmentShootable : MonoBehaviour, IShootable
             spring.targetValue = 0;
             Destroy(gameObject, 2);
             //enter behavior to change level
+        }
+    }
+
+    private void OnDestroy()
+    {
+        fragmentCount -= 1;
+        if (fragmentCount == 0)
+        {
+            _transition.Invoke();
         }
     }
 
