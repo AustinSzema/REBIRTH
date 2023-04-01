@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c0527f0f16407244a09e65dc597518f, type: 3}
-  m_Name: Level1Dialogue
+  m_Name: Level2Dialogue
   m_EditorClassIdentifier: 
   DialogueText:
-  - 'ou: Ugh...what time is it?'
+  - 'You: Ugh...what time is it?'
   - "You:  ...Huh? Where\u2019s my alarm clock...?"
-  - "You: Right...I was late to work. Stupid alarm clock didn\u2019t go off! "
-  - 'Narrator: The alarm clock was not indeed stupid. The same cannot be said of
-    the person who forgot to set it. '
-  - 'And then what...? Right, I had to get to work. But first... '
+  - "You:  ...Huh? Where\u2019s my alarm clock...?"
