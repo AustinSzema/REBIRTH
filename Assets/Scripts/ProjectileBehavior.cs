@@ -19,6 +19,6 @@ public class ProjectileBehavior : MonoBehaviour
             shootable.Hit();
         }
         //hitAlready = true;
-        Debug.Log("hit");
+        //Debug.Log("hit");
     }
 }

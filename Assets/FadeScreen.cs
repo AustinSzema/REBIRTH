@@ -34,27 +34,31 @@ public class FadeScreen : MonoBehaviour
     {
         if (fadeToBlack == true && screenFade.color.a != 100f)
         {
-            Debug.Log(alpha);
+            //Debug.Log(alpha);
             screenFade.color = new Color(0f, 0f, 0f, alpha);
             alpha += fadeSpeed * Time.deltaTime;
             alpha = Mathf.Clamp(alpha, 0, 1);
         }
         if (fadeToBlack == true && screenFade.color == black)
         {
+            
+            if (!tran) { return; }
             Debug.Log("dog");
-            if (SceneManager.GetSceneByBuildIndex(nextScene).IsValid())
-            {
-                Debug.Log("cat");
-                if (!tran) { return; }
-                tran = false;
-                Invoke("Transition", 1);
-            }
+            tran = false;
+            Invoke("Transition", 1);
+            //if (SceneManager.GetSceneByBuildIndex(nextScene).IsValid())
+            //{
+            //    Debug.Log("cat");
+            //    if (!tran) { return; }
+            //    tran = false;
+            //    Invoke("Transition", 1);
+            //}
             
         }
 
         if (fadeToBlack == false && screenFade.color.a != 0f)
         {
-            Debug.Log(alpha);
+            //Debug.Log(alpha);
             screenFade.color = new Color(0f, 0f, 0f, alpha);
             alpha -= fadeSpeed * Time.deltaTime;
             alpha = Mathf.Clamp(alpha, 0, 1);
