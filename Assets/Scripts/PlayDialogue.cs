@@ -55,10 +55,15 @@ public class PlayDialogue : MonoBehaviour
             CancelInvoke("nextString");
             if (isTransitionScene)
             {
-                _transition.Invoke();
+                Invoke("Transition", textDelay);
             }
             Debug.Log("Invoke stopped");
         }
+    }
+
+    private void Transition()
+    {
+        _transition.Invoke();
     }
 
 }
