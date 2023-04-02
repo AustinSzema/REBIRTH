@@ -818,9 +818,9 @@ Transform:
   - {fileID: 850834020}
   - {fileID: 468720208}
   - {fileID: 1816801378}
+  - {fileID: 399395380}
   - {fileID: 1246665067}
   - {fileID: 556354754}
-  - {fileID: 399395380}
   - {fileID: 2075102950}
   - {fileID: 1104232828}
   - {fileID: 1983130926}
@@ -2126,7 +2126,7 @@ Transform:
   - {fileID: 1854917254}
   - {fileID: 1173064785}
   m_Father: {fileID: 116291610}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &444512721
 PrefabInstance:
@@ -3071,6 +3071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496688451880380242, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037,
+        type: 3}
+      propertyPath: nextScene
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037, type: 3}

@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscene3.unity
     guid: 451b43a9043009842bb56431677dc2a8
   - enabled: 1
+    path: Assets/Scenes/GOINGTOWORK.unity
+    guid: 5e495aa034e0444cd9807723709f2def
+  - enabled: 1
     path: Assets/Scenes/Construction.unity
     guid: 25815d32ec3978341889e89808512363
   - enabled: 1

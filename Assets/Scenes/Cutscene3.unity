@@ -699,7 +699,7 @@ MonoBehaviour:
   screenFade: {fileID: 4386455316068890911}
   fadeSpeed: 0.35
   playDialogue: {fileID: 0}
-  nextScene: 0
+  nextScene: 7
 --- !u!224 &4386455316068890910
 RectTransform:
   m_ObjectHideFlags: 0
