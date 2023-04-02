@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Cutscene : MonoBehaviour
@@ -9,7 +11,8 @@ public class Cutscene : MonoBehaviour
     [SerializeField] private float[] delayAfterFrame;
     //[SerializeField] private float delayBetweenFrames;
     [SerializeField] Image screen;
-    
+    [SerializeField] private UnityEvent _transition;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,11 @@ public class Cutscene : MonoBehaviour
             screen.sprite = frames[count];
             yield return new WaitForSeconds(delayAfterFrame[count]);
         }
+        Invoke("Transition", 1);
     }
 
+    void Transition()
+    {
+        _transition.Invoke();
+    }
 }

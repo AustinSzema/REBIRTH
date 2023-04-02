@@ -269,24 +269,43 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 03f4a5dce893446caa41041b165a44a0, type: 3}
   - {fileID: 21300000, guid: c02be9a9fa573483f9d79446fd9c1ae0, type: 3}
   - {fileID: 21300000, guid: 36a7f523f580a496ca35a21522e9d360, type: 3}
+  - {fileID: 21300000, guid: 443415a81bbe91147b61bbca56644651, type: 3}
+  - {fileID: 21300000, guid: 1af5419ed3e51c24f9ae98d970d3e854, type: 3}
   - {fileID: 21300000, guid: 5efd2fc8d6bbe4d56a62daee0340cc2b, type: 3}
   - {fileID: 21300000, guid: 47fb86383b13f432bbbb3d3f2b9e3e5f, type: 3}
   - {fileID: 21300000, guid: 6bd78075bfafb46d2a8d3b5cb2a4bf60, type: 3}
   delayAfterFrame:
-  - 5
+  - 7
+  - 0.5
+  - 0.5
+  - 0.5
+  - 3
+  - 3
+  - 0.5
+  - 0.5
+  - 0.5
   - 1
   - 1
   - 1
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 2
   - 1
   screen: {fileID: 1307831230}
+  _transition:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5005821287812143473}
+        m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
+        m_MethodName: FadeMe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1307831230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,8 +1112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueSO: {fileID: 11400000, guid: 29daeaef916f00946b60795226f6a081, type: 2}
+  _transition:
+    m_PersistentCalls:
+      m_Calls: []
   dialogueText: {fileID: 5005821287518395632}
   textDelay: 4
+  isTransitionScene: 0
 --- !u!1 &5005821287736642589
 GameObject:
   m_ObjectHideFlags: 0
