@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AustinTestScene.unity
     guid: adc7e2767ee36084699f23f6986061c8
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/BedroomSOLO.unity
     guid: 53bd881fffaa4e2498adc9f6d8dbf027
@@ -22,14 +19,17 @@ EditorBuildSettings:
     guid: 7b3d5229209e29946aa024d5a36e1323
   - enabled: 1
     path: Assets/Scenes/Cutscene2.unity
-    guid: 56e022486676a544abb723e47899bf9f
+    guid: ac350e9c0abbfe94d8e760859073cdf1
   - enabled: 1
     path: Assets/Scenes/Bedroom and Kitchen.unity
     guid: a188c69a48f40b949bea8065ba5d413a
   - enabled: 1
     path: Assets/Scenes/Cutscene3.unity
-    guid: 678d7a4be436d2241abfd00c139ad0b2
+    guid: 451b43a9043009842bb56431677dc2a8
   - enabled: 1
     path: Assets/Scenes/Construction.unity
     guid: 25815d32ec3978341889e89808512363
+  - enabled: 1
+    path: Assets/Scenes/BrickCutscene.unity
+    guid: 4c5b9707f3ec29845a59e862cf35b202
   m_configObjects: {}
