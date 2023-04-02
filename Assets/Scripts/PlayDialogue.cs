@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class PlayDialogue : MonoBehaviour
 {
     [SerializeField] private Dialogue dialogueSO;
-
+    [SerializeField] private UnityEvent _transition;
 
     [SerializeField] private TextMeshProUGUI dialogueText;
 
     [SerializeField] private float textDelay = 4f;
+
+    [SerializeField] private bool isTransitionScene;
 
 
 
@@ -49,7 +53,10 @@ public class PlayDialogue : MonoBehaviour
         if (index == dialogueSO.DialogueText.Length)
         {
             CancelInvoke("nextString");
-
+            if (isTransitionScene)
+            {
+                _transition.Invoke();
+            }
             Debug.Log("Invoke stopped");
         }
     }
