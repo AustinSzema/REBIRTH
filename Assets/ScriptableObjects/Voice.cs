@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Voice : MonoBehaviour
+[CreateAssetMenu(menuName = "Voice", fileName = "New Voice")]
+public class Voice : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] public AudioClip[] VoiceActing;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
