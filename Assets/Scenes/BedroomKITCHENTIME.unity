@@ -2079,6 +2079,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7170681669860854120, guid: 763039c5dbbca9d469b9cab0a504508c,
         type: 3}
+      propertyPath: sfx1
+      value: 
+      objectReference: {fileID: 8300000, guid: 02214c47720732645ba73cd2e895a06f, type: 3}
+    - target: {fileID: 7170681669860854120, guid: 763039c5dbbca9d469b9cab0a504508c,
+        type: 3}
+      propertyPath: sfx2
+      value: 
+      objectReference: {fileID: 8300000, guid: 87624c5d6450f894183c3d24d8a01349, type: 3}
+    - target: {fileID: 7170681669860854120, guid: 763039c5dbbca9d469b9cab0a504508c,
+        type: 3}
+      propertyPath: sfx3
+      value: 
+      objectReference: {fileID: 8300000, guid: 972a5c5541401c4469975ea36459c326, type: 3}
+    - target: {fileID: 7170681669860854120, guid: 763039c5dbbca9d469b9cab0a504508c,
+        type: 3}
+      propertyPath: sfx4
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f63c6c52d0b5544592f7bbc0e955965, type: 3}
+    - target: {fileID: 7170681669860854120, guid: 763039c5dbbca9d469b9cab0a504508c,
+        type: 3}
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 2954596023698797170, guid: c4053c329fbd08c4d883a724ff362307,
