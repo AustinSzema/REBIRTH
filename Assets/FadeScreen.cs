@@ -41,8 +41,10 @@ public class FadeScreen : MonoBehaviour
         }
         if (fadeToBlack == true && screenFade.color == black)
         {
+            Debug.Log("dog");
             if (SceneManager.GetSceneByBuildIndex(nextScene).IsValid())
             {
+                Debug.Log("cat");
                 if (!tran) { return; }
                 tran = false;
                 Invoke("Transition", 1);

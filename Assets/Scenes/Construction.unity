@@ -1904,6 +1904,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037, type: 3}
+--- !u!114 &886511954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6496688451880380242, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037,
+    type: 3}
+  m_PrefabInstance: {fileID: 886511953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e67696885142b4ea9b1365d55c2cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!108 &888506628 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 4569289811901151837, guid: 808a121817b3c594486292e978f8308c,
@@ -4180,6 +4192,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 886511954}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeMe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FadeScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207437679515477713, guid: 1f0563f34ca352f4faf1098301ebd721,
+        type: 3}
+      propertyPath: _transition.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7207437679515477717, guid: 1f0563f34ca352f4faf1098301ebd721,
         type: 3}
