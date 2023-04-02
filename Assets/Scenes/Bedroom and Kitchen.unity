@@ -3199,6 +3199,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6496688451821662768, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037,
+        type: 3}
+      propertyPath: dialogueSO
+      value: 
+      objectReference: {fileID: 11400000, guid: e13688b3f255a034d8303ed9806dc858,
+        type: 2}
     - target: {fileID: 6496688451880380242, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037,
         type: 3}
       propertyPath: nextScene
