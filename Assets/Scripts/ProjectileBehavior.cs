@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileBehavior : MonoBehaviour
 {
-    private bool hitAlready = false;
+    //private bool hitAlready = false;
     void Start()
     {
         Destroy(gameObject, 10);
@@ -12,13 +12,13 @@ public class ProjectileBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (hitAlready) { return; }
+        //if (hitAlready) { return; }
         IShootable shootable = collision.gameObject.GetComponent<IShootable>();
         if (shootable != null)
         {
             shootable.Hit();
         }
-        hitAlready = true;
+        //hitAlready = true;
         Debug.Log("hit");
     }
 }
