@@ -269,21 +269,25 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 03f4a5dce893446caa41041b165a44a0, type: 3}
   - {fileID: 21300000, guid: c02be9a9fa573483f9d79446fd9c1ae0, type: 3}
   - {fileID: 21300000, guid: 36a7f523f580a496ca35a21522e9d360, type: 3}
+  - {fileID: 21300000, guid: 443415a81bbe91147b61bbca56644651, type: 3}
+  - {fileID: 21300000, guid: 1af5419ed3e51c24f9ae98d970d3e854, type: 3}
   - {fileID: 21300000, guid: 5efd2fc8d6bbe4d56a62daee0340cc2b, type: 3}
   - {fileID: 21300000, guid: 47fb86383b13f432bbbb3d3f2b9e3e5f, type: 3}
   - {fileID: 21300000, guid: 6bd78075bfafb46d2a8d3b5cb2a4bf60, type: 3}
   delayAfterFrame:
-  - 5
+  - 7
   - 0.5
   - 0.5
   - 0.5
   - 3
-  - 1
+  - 3
   - 0.5
   - 0.5
   - 0.5
   - 2
-  - 0.5
+  - 1
+  - 1
+  - 1
   - 2
   - 1
   screen: {fileID: 1307831230}
