@@ -794,7 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1639a7173d169dc478b11af5ac649d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: 74e6caa11645a6a46ab9d68cc216ade0, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 7253df324b8e6d24a830879992ed8965, type: 2}
   _transition:
     m_PersistentCalls:
       m_Calls:
@@ -811,7 +811,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   dialogueText: {fileID: 4386455315908279452}
-  textDelay: 4
+  textDelay: 7
   isTransitionScene: 1
 --- !u!222 &4386455316503374280
 CanvasRenderer:
@@ -1042,7 +1042,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -40}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 100, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4386455317568757932
 MonoBehaviour:
