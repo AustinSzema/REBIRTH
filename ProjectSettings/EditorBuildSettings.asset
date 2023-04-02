@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AustinTestScene.unity
     guid: adc7e2767ee36084699f23f6986061c8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/BedroomSOLO.unity
+    guid: 53bd881fffaa4e2498adc9f6d8dbf027
   m_configObjects: {}
