@@ -794,7 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1639a7173d169dc478b11af5ac649d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: 29daeaef916f00946b60795226f6a081, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 74e6caa11645a6a46ab9d68cc216ade0, type: 2}
   _transition:
     m_PersistentCalls:
       m_Calls:
