@@ -3679,6 +3679,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2467428340344289837, guid: 808a121817b3c594486292e978f8308c,
         type: 3}
+      propertyPath: sfx1
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a31bddd179a9794abcc7cd043477242, type: 3}
+    - target: {fileID: 2467428340344289837, guid: 808a121817b3c594486292e978f8308c,
+        type: 3}
+      propertyPath: sfx2
+      value: 
+      objectReference: {fileID: 8300000, guid: 3eed8fefb7f602845b729eb8f6da9b56, type: 3}
+    - target: {fileID: 2467428340344289837, guid: 808a121817b3c594486292e978f8308c,
+        type: 3}
+      propertyPath: sfx3
+      value: 
+      objectReference: {fileID: 8300000, guid: 17d7d53744f125e4b8cc609fef93ec00, type: 3}
+    - target: {fileID: 2467428340344289837, guid: 808a121817b3c594486292e978f8308c,
+        type: 3}
+      propertyPath: sfx4
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b9c111435d1b65498f0a40d55a642ba, type: 3}
+    - target: {fileID: 2467428340344289837, guid: 808a121817b3c594486292e978f8308c,
+        type: 3}
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 2954596023698797170, guid: eb48beea24e12a943b23ebab4130717c,
