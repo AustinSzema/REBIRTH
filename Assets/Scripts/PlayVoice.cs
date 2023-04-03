@@ -8,17 +8,19 @@ public class PlayVoice : MonoBehaviour
 {
     [SerializeField] private Voice voiceSO;
     [SerializeField] private UnityEvent voice_Transition;
-    [SerializeField] private float voiceDelay = 6f;
+    [SerializeField] private float voiceDelay = 10f;
     [SerializeField] private bool isVoiceTransitionScene;
     int voiceIndex = 0;
+
+    [SerializeField] private AudioSource _audioSource;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        AudioSource.PlayClipAtPoint(voiceSO.VoiceActing[voiceIndex], transform.position);
-        InvokeRepeating("nextAudioClip", 7.0f, voiceDelay);
+        _audioSource.PlayOneShot(voiceSO.VoiceActing[voiceIndex]);
+        InvokeRepeating("nextAudioClip", 10.0f, voiceDelay);
     }
 
     void nextAudioClip()
@@ -26,9 +28,24 @@ public class PlayVoice : MonoBehaviour
         if (voiceIndex <= voiceSO.VoiceActing.Length - 1)
         {
             voiceIndex++;
-            AudioSource.PlayClipAtPoint(voiceSO.VoiceActing[voiceIndex], transform.position);
-           
+
+            _audioSource.PlayOneShot(voiceSO.VoiceActing[voiceIndex]);
+
         }
+
+
+
+
+
+
     }
 
+
+
+
+
 }
+
+
+
+

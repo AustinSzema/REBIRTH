@@ -15,4 +15,5 @@ MonoBehaviour:
   VoiceActing:
   - {fileID: 8300000, guid: 8710a2644ea138444b0fff91d82e3dcd, type: 3}
   - {fileID: 8300000, guid: 4495ce35dbde8a74fbdf92177f8fdf9f, type: 3}
+  - {fileID: 8300000, guid: 635fcf8d0eb0b4e4993c969c79669056, type: 3}
   - {fileID: 8300000, guid: 0642e36241b9fb04ba1cf6b67b40a3cf, type: 3}

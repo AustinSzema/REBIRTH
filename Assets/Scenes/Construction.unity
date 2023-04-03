@@ -2037,6 +2037,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6496688451821662768, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037,
         type: 3}
+      propertyPath: voiceSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b3b28ba251fb46298abc64a99f2bd62,
+        type: 2}
+    - target: {fileID: 6496688451821662768, guid: fdb91fc5dd6e2de40a6dec9ec0ff5037,
+        type: 3}
       propertyPath: dialogueSO
       value: 
       objectReference: {fileID: 11400000, guid: dcc0f89c840ba467c8ebbf6ac629a331,

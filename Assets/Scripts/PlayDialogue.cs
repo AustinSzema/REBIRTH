@@ -8,6 +8,8 @@ using UnityEngine.Events;
 public class PlayDialogue : MonoBehaviour
 {
     [SerializeField] private Dialogue dialogueSO;
+
+
     [SerializeField] private UnityEvent _transition;
 
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -16,14 +18,16 @@ public class PlayDialogue : MonoBehaviour
 
     [SerializeField] private bool isTransitionScene;
 
+    [SerializeField] private Voice voiceSO;
 
+    [SerializeField] private AudioSource _audioSource;
 
     int index = 0;
 
     void Start()
     {
         dialogueText.text = dialogueSO.DialogueText[index];
-        InvokeRepeating("nextString", 3.0f, textDelay);
+        InvokeRepeating("nextString", 0.0f, textDelay);
     }
 
 
@@ -34,6 +38,7 @@ public class PlayDialogue : MonoBehaviour
 
             dialogueText.text = dialogueSO.DialogueText[index];
 
+            _audioSource.PlayOneShot(voiceSO.VoiceActing[index]);
 
             if (dialogueSO.DialogueText[index].Length > 0 && !char.IsLetter(dialogueSO.DialogueText[index][0]))
             {
@@ -46,7 +51,6 @@ public class PlayDialogue : MonoBehaviour
                 dialogueText.fontStyle = FontStyles.Italic | FontStyles.Bold;
 
             }
-
 
             index++;
         }

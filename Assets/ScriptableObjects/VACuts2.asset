@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VoiceActing:
   - {fileID: 8300000, guid: 96de7f220b5d867409eae61156ddd1f2, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8086a836c5cdc424ab8a075db7635867, type: 3}
   - {fileID: 8300000, guid: 7f60349068438b04aaec677f1c0d1bba, type: 3}
   - {fileID: 8300000, guid: bb509e5849db00e419fb0db41c3b1cd2, type: 3}
   - {fileID: 8300000, guid: 5f099993a5b7b654f9c12d55345670e8, type: 3}
